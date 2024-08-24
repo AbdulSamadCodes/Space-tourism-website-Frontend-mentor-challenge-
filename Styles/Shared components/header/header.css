@@ -1,0 +1,10 @@
+  /* custom properties */
+  :root {
+    /* spacings */
+    --header-padding-block:2rem;
+
+  }
+
+  .header {
+    padding-block:var(--header-padding-block);
+  }

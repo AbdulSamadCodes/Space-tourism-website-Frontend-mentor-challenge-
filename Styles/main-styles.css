@@ -1,0 +1,14 @@
+  /* custom properties */
+  :root {
+
+  }
+
+  /* main container */
+  .main-container {
+    min-height:100vh;
+    min-height:100dvh;
+
+    background-image:url('/assets/home/background-home-mobile.jpg');
+    background-size:cover;
+    background-position:center;
+  }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- stylesheets links-->
+    <link rel="stylesheet" href="/Styles/reset.css" />
+    <link rel="stylesheet" href="/Styles//global-custom-properties.css" />
+    <link rel="stylesheet" href="/Font/fonts.css" />
+    <link rel="stylesheet" href="/Styles/main-styles.css" />
+    <link rel="stylesheet" href="/Styles/utility-classes.css" />
+    <link rel="stylesheet" href="/Shared components/header/header.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div
+      class="main-container home-container"
+      data-mobile-bg="/assets/home/background-home-mobile.jpg"
+      data-tablet-bg="/assets/home/background-home-tablet.jpg"
+      data-desktop-bg="/assets/home/background-home-desktop.jpg"
+    >
+      <!-- header -->
+      <header class= "header fixed w-100" data-header>
+        <div class="wrapper flex align-items-center justify-content-between">
+          <div class="logo">
+            <img src="/assets/shared/logo.svg" />
+          </div>
+
+          <button class="nav-toggle-btn" data-nav-toggle-btn>
+            <img src="/assets/shared/icon-hamburger.svg" data-nav-toggle-icon>
+          </button>
+
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
