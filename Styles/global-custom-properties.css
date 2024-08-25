@@ -1,7 +1,12 @@
 :root {
   /* widths */
   --wrapper-max-width:350px;
+
+  /* colors */
+  --clr-white:hsl(0,0%,100%);
+  --clr-light:hsl(231,77%,90%);
+  --clr-dark:hsl(230,35%,7%);
     
   /* typograpy */
-  --ff-Pragati-narrow:"Pragati Narrow", sans-serif;;
+  --ff-fira-sans-condensed:"Fira Sans Condensed", sans-serif;
 }

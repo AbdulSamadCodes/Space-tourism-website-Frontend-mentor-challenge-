@@ -43,7 +43,8 @@ form,
 input,
 button,
 select,
-option {
+option,
+textarea {
   font: inherit;
 }
 

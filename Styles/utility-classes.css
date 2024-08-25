@@ -46,10 +46,41 @@
   display: inline;
 }
 
+.display-inline-block {
+  display:inline-block;
+}
+
 .text-center {
   text-align: center;
 }
 
 .w-100 {
   width:100%;
+}
+
+.uppercase {
+  text-transform:uppercase;
+}
+
+.has-underline {
+  position:relative;
+}
+
+.has-underline::before {
+  content:'';
+  position:absolute;
+  width:0;
+  height:2px;
+  background-color:var(--clr-white);
+  left:0;
+
+  transition:width 300ms ease;
+}
+
+.has-underline:is(:hover,:focus)::before {
+  width:100%;
+}
+
+.cursor-pointer {
+  cursor:pointer;
 }

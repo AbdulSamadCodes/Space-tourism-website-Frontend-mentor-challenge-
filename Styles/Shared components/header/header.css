@@ -1,10 +1,88 @@
-  /* custom properties */
-  :root {
-    /* spacings */
-    --header-padding-block:2rem;
+/* custom properties */
+:root {
+  /* widths */
+  --mobile-navigation-width: min(350px, 80%);
 
-  }
+  /* spacings */
+  --header-padding-block: 2rem;
+  --header-wrapper-inline-spacing: 2rem;
+  --mobile-navigation-padding: min(10rem,20vh) 2rem 0;
+  --navbar-list-gap: 5rem;
+  --nav-link-underline-gap:1rem;
 
-  .header {
-    padding-block:var(--header-padding-block);
+  /* colors */
+  --clr-navigation-bg: hsla(0, 0%, 100%, 0.02);
+  --clr-navigation-bg-dark:hsla(230,35%,7%,1);
+
+  /* typography */
+  --ff-nav-link:1.6rem;
+
+  /* stacking contexts */
+  --header-z-index: 3;
+}
+
+.header {
+  padding-block: var(--header-padding-block);
+  z-index: var(--header-z-index);
+}
+
+.header > .wrapper {
+  padding-inline: var(--header-wrapper-inline-spacing);
+}
+
+.navbar {
+  --right-multiplier-value:-1;
+
+  background: var(--clr-navigation-bg-dark);
+  color: var(--clr-white);
+  font-family: var(--ff-fira-sans-condensed);
+  gap: var(--mobile-navigation-gap);
+  position: fixed;
+  padding: var(--mobile-navigation-padding);
+  width: var(--mobile-navigation-width);
+  max-width: var(--mobile-navigation-width);
+  top: 0;
+  bottom: 0;
+  right: calc(var(--mobile-navigation-width) * var(--right-multiplier-value));
+}
+
+.navbar.active{
+  --right-multiplier-value:0;
+}
+
+.nav__list {
+  flex-direction: column;
+  gap: var(--navbar-list-gap);
+}
+
+.nav__link {
+  font-size:var(--ff-nav-link);
+  font-weight:600;
+  letter-spacing:1.6px;
+  max-width:max-content;
+}
+
+.nav__link.has-underline::before {
+  bottom:calc(var(--nav-link-underline-gap) * -1);
+} 
+
+.tabs__counter {
+  margin-inline-end:0.5rem;
+} 
+
+.nav__close-btn {
+  --translate-Y:1rem;
+  top:var(--header-padding-block);
+  right:var(--header-wrapper-inline-spacing);
+
+  transform:translateY(var(--translate-Y));
+}
+
+@supports(backdrop-filter:blur(1rem)) {
+  .navbar {
+    background-color:var(--clr-navigation-bg);
+    backdrop-filter:blur(1rem);
   }
+}
+
+

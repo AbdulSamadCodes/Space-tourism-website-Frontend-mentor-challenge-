@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/Font/fonts.css" />
     <link rel="stylesheet" href="/Styles/main-styles.css" />
     <link rel="stylesheet" href="/Styles/utility-classes.css" />
-    <link rel="stylesheet" href="/Shared components/header/header.css" />
+    <link rel="stylesheet" href="/Styles/Shared components/header/header.css" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -30,18 +30,55 @@
       data-desktop-bg="/assets/home/background-home-desktop.jpg"
     >
       <!-- header -->
-      <header class= "header fixed w-100" data-header>
+      <header class="header fixed w-100" data-header>
         <div class="wrapper flex align-items-center justify-content-between">
           <div class="logo">
-            <img src="/assets/shared/logo.svg" />
+            <img src="/assets/shared/logo.svg" width="40" />
           </div>
 
-          <button class="nav-toggle-btn" data-nav-toggle-btn>
-            <img src="/assets/shared/icon-hamburger.svg" data-nav-toggle-icon>
-          </button>
+          <nav class="navbar" data-navbar>
+            <button class="nav__close-btn absolute" data-close-open-btn data-nav-toggle-btn>
+              <img src="/assets/shared/icon-close.svg"/>
+            </button>
 
+            <ul class="nav__list flex">
+              <li class="nav__item">
+                <a class="nav__link uppercase has-underline cursor-pointer"
+                  ><span class="tabs__counter display-inline-block">00</span
+                  >Home
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link uppercase has-underline cursor-pointer"
+                  ><span class="tabs__counter display-inline-block">01</span
+                  >Destinaton
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link uppercase has-underline cursor-pointer"
+                  ><span class="tabs__counter display-inline-block">02</span
+                  >Crew
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link uppercase has-underline cursor-pointer"
+                  ><span class="tabs__counter display-inline-block">03</span
+                  >Technology
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="nav__open-btn" data-nav-open-btn data-nav-toggle-btn>
+            <img src="/assets/shared/icon-hamburger.svg"/>
+          </button>
         </div>
       </header>
     </div>
+    <!-- custom scripts link -->
+    <script src="/src/header.js"></script> 
   </body>
 </html>
