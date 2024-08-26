@@ -13,6 +13,7 @@
   /* colors */
   --clr-navigation-bg: hsla(0, 0%, 100%, 0.05);
   --clr-navigation-bg-dark: hsla(230, 35%, 7%, 1);
+  --clr-navigation-outline:hsla(0,0%,100%,0.1);
 
   /* typography */
   --fs-nav-link: 1.5rem;
@@ -36,6 +37,7 @@
 
 .navbar {
   --right-multiplier-value: -1;
+  --outline-width:0;
 
   background: var(--clr-navigation-bg-dark);
   gap: var(--mobile-navigation-gap);
@@ -89,7 +91,7 @@
 
 /* media queries */
 
-/* resposnive for medium devices */
+/* resposnive for medium size devices */
 @media (width > 575px) {
   :root {
     --header-wrapper-inline-spacing: 2rem 0;
@@ -120,10 +122,11 @@
 
   .nav__list {
     flex-direction: row;
+    align-items:center;
   }
 }
 
-/* resposnive for large devices */
+/* resposnive for large size devices */
 @media (width > 768px) {
   :root {
     --header-padding-block: 3rem;
@@ -144,7 +147,15 @@
     font-size:calc(var(--fs-nav-link) + 0.2rem);
     font-weight:800;
   }
-  
+
+  .navbar::before {
+    background-color:var(--clr-navigation-outline);
+    width:var(--outline-width);
+    height:0.8px;
+    left:calc((var(--outline-width) - 15px) * -1);
+    top:50%;
+    transform:translateY(-50%);
+  }  
 }
 
 @media (width > 992px) {
