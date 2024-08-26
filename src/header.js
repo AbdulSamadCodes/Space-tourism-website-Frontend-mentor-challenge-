@@ -19,7 +19,7 @@ function updateOutlineWidth() {
   const {right:logoPosition} = logo.getBoundingClientRect();
   const {left:navbarPosition} = navbar.getBoundingClientRect();
 
-  width = (navbarPosition - logoPosition) - 50;
+  width = (navbarPosition - logoPosition) - 40;
   navbar.style.setProperty('--outline-width',`${width}px`);  
 }
 
