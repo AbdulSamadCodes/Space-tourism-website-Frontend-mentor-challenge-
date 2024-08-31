@@ -1,17 +1,71 @@
-  /* custom properties */
-  /* :root {
+/* custom properties */
+:root {
+  /* spacings */
+  --content-wrapper-padding-block:12rem;
 
-  } */
-
-  /* main container */
-  .main-container {
-    min-height:100vh;
-    min-height:100dvh;
-
-    background-image:url('/assets/home/background-home-mobile.jpg');
-    background-size:cover;
-    background-position:center;
-  }
-
+  /* typography */
+  --fs-secondary-title:2rem;
+  --fs-primary-title:8rem;
+  --fs-section-text:1.8rem;
   
+  --fw-seconadary-title:500;
 
+  --section-text-max-width:auto;
+}
+
+/* resused styles */
+.section__text,
+.title__secondary {
+  color:var(--clr-light);
+}
+
+
+/* main container */
+.main-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  background-image: url("/assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper { 
+  padding-inline:var(--wrapper-padding-inline);
+}
+
+.content__wrapper {
+  --text-align:center;
+
+  padding-block:var(--content-wrapper-padding-block);
+  text-align:var(--text-align);
+}
+
+.title__secondary {
+  --letter-spacing:2.3px;
+
+  color:var(--clr-light);
+  font-size:var(--fs-secondary-title);
+  font-weight:var(--fw-secondary-title);  
+  letter-spacing:var(--letter-spacing);
+}
+
+.title__primary {
+  --letter-spacing:6px;
+
+  color:var(--clr-white);
+  font-family:var(--ff-Bellafair);
+  font-size:var(--fs-primary-title);
+  letter-spacing:var(--letter-spacing);
+  font-weight:500;
+}
+
+.section__text {
+  --line-height:1.5;
+  --letter-spacing:1.4px;
+
+  max-width:var(--section-text-max-width);
+  font-size:var(--fs-section-text);
+  line-height:var(--line-height);
+  letter-spacing:var(--letter-spacing);
+}

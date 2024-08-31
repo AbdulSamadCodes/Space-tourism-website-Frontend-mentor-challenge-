@@ -2,6 +2,9 @@
   /* widths */
   --wrapper-max-width:350px;
 
+  /* spacings */
+  --wrapper-padding-inline:2rem;
+
   /* colors */
   --clr-white:hsl(0,0%,100%);
   --clr-light:hsl(231,77%,90%);
@@ -10,4 +13,8 @@
   /* typograpy */
   --ff-fira-sans-condensed:"Fira Sans Condensed", sans-serif;
   --ff-Barlow-condensed:"Barlow Condensed", sans-serif;
+  --ff-Bellafair:"Bellefair", serif;
 }
+
+
+

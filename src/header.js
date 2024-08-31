@@ -25,5 +25,3 @@ function updateOutlineWidth() {
 
 window.addEventListener("resize",updateOutlineWidth);
 window.addEventListener("load",updateOutlineWidth);
-
-

@@ -1,0 +1,14 @@
+/* custom properties */
+:root {
+  /* spacings */
+  --home-content-gap:2rem;
+
+}
+
+.home-content {
+  gap:var(--home-content-gap);
+}
+
+.btn-explore {
+  
+}

@@ -17,7 +17,6 @@
 
   /* typography */
   --fs-nav-link: 1.5rem;
-
   --fw-nav-link: 600;
 
   /* stacking contexts */
@@ -95,12 +94,13 @@
 @media (width > 575px) {
   :root {
     --header-wrapper-inline-spacing: 2rem 0;
+    --navigation-padding:3rem 4rem;
+    --navbar-list-gap: 4rem;
     --nav-link-underline-gap: 3rem;
 
     --clr-navigation-bg: hsla(0, 0%, 100%, 0.04);
-    --navbar-list-gap: 4rem;
+    
     --fw-nav-link: 400;
-    --navigation-padding:3rem 4rem;
   }
 
   .navbar {
@@ -132,14 +132,15 @@
     --header-padding-block: 3rem;
     --navbar-list-gap: 6rem;
     --navigation-padding:3rem 12rem 3rem 6rem;
+
     --fw-nav-link: 500;
   }
 }
 
 @media (width > 992px) {
   :root {
-    --navbar-list-gap: 6rem;
     --navigation-padding:3rem 12rem 3rem 6rem;
+    --navbar-list-gap: 6rem;
   }
 
   .tabs__counter {
