@@ -2,15 +2,15 @@
 :root {
   /* spacings */
   --content-wrapper-padding-block:12rem;
+  --section-text-margin-inline:auto;
 
   /* typography */
   --fs-secondary-title:2rem;
-  --fs-primary-title:8rem;
-  --fs-section-text:1.8rem;
-  
+  --fs-section-text:1.7rem;
+
   --fw-seconadary-title:500;
 
-  --section-text-max-width:auto;
+  --section-text-max-width:50ch;
 }
 
 /* resused styles */
@@ -18,7 +18,6 @@
 .title__secondary {
   color:var(--clr-light);
 }
-
 
 /* main container */
 .main-container {
@@ -30,8 +29,9 @@
   background-position: center;
 }
 
-.wrapper { 
+.wrapper:not(.header > .wrapper) { 
   padding-inline:var(--wrapper-padding-inline);
+  max-width:var(--wrapper-max-width);
 }
 
 .content__wrapper {
@@ -55,9 +55,6 @@
 
   color:var(--clr-white);
   font-family:var(--ff-Bellafair);
-  font-size:var(--fs-primary-title);
-  letter-spacing:var(--letter-spacing);
-  font-weight:500;
 }
 
 .section__text {
@@ -68,4 +65,19 @@
   font-size:var(--fs-section-text);
   line-height:var(--line-height);
   letter-spacing:var(--letter-spacing);
+  margin-inline:var(--section-text-margin-inline);
+}
+
+/*  media queries */
+/* responsive for medium size devices */
+
+@media (width > 575px) {
+  :root{
+    --wrapper-max-width:500px;
+    --content-wrapper-padding-block:18rem;
+
+    --section-text-max-width:60ch;
+
+    --fs-primary-title:12rem;
+  }
 }

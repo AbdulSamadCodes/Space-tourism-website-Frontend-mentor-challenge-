@@ -2,13 +2,62 @@
 :root {
   /* spacings */
   --home-content-gap:2rem;
+  --btn-explore-margin-inline:auto;
+  --home-content-wrapper-gap:10rem;
 
+  /* widths */
+  --btn-explore-width:15rem;
+
+  /* typography */
+  --fs-btn-explore:2.2rem;
+  --fs-home-title-primary:8rem;
+
+  --fw-btn-explore:500;
+  --fw-home-title-primary:500;
 }
 
 .home-content {
   gap:var(--home-content-gap);
 }
 
-.btn-explore {
+.home__content__wrapper {
+  gap:var(--home-content-wrapper-gap);  
+}
+
+.home__title__primary {
+  --letter-spacing:2.5px;
   
+  font-size:var(--fs-home-title-primary);
+  font-weight:var(--fw-home-title-primary);
+  letter-spacing:var(--letter-spacing);
+}
+
+.btn-explore {
+  --letter-spacing:1.5px;
+
+  width:var(--btn-explore-width);
+  padding:1em;
+  aspect-ratio:1/1;
+  border-radius:50%;
+
+  background-color:var(--clr-white);   
+  color:var(--clr-dark);
+  
+  font-size:var(--fs-btn-explore);
+  font-weight:var(--fw-btn-explore);
+  font-family:var(--ff-Bellafair);
+  letter-spacing:var(--letter-spacing); 
+
+  margin-inline:var(--btn-explore-margin-inline);
+}
+
+
+/*  media queries */
+/* responsive for medium size devices */
+
+@media (width > 575px) {
+  :root{
+    --btn-explore-width:18rem;
+    --fs-home-title-primary:12rem;   
+  }
 }
