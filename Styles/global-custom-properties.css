@@ -3,7 +3,7 @@
   --wrapper-max-width:350px;
 
   /* spacings */
-  --wrapper-padding-inline:2rem;
+  --wrapper-padding-inline:20px;
 
   /* colors */
   --clr-white:hsl(0,0%,100%);

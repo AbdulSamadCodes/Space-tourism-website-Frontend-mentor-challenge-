@@ -49,15 +49,24 @@
   letter-spacing:var(--letter-spacing); 
 
   margin-inline:var(--btn-explore-margin-inline);
+
+  transition:color 400ms ease,
+             background-color 400ms ease;     
 }
 
+.btn-explore:is(:hover,:focus) {
+  background-color:var(--clr-dark);
+  color:var(--clr-white);
+}
 
 /*  media queries */
-/* responsive for medium size devices */
 
+/* responsive for medium size devices */
 @media (width > 575px) {
   :root{
     --btn-explore-width:18rem;
     --fs-home-title-primary:12rem;   
   }
 }
+
+

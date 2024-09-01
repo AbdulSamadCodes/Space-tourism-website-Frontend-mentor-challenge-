@@ -2,6 +2,7 @@
 :root {
   /* widths */
   --mobile-navigation-width: min(350px, 80%);
+  --minimum-outline-gap:40px;
 
   /* spacings */
   --header-padding-block: 2rem;
@@ -18,7 +19,7 @@
   /* typography */
   --fs-nav-link: 1.5rem;
   --fw-nav-link: 600;
-
+  
   /* stacking contexts */
   --header-z-index: 3;
 }
@@ -37,6 +38,7 @@
 .navbar {
   --right-multiplier-value: -1;
   --outline-width:0;
+  --left-inset:15px;
 
   background: var(--clr-navigation-bg-dark);
   gap: var(--mobile-navigation-gap);
@@ -97,18 +99,18 @@
     --navigation-padding:3rem 4rem;
     --navbar-list-gap: 4rem;
     --nav-link-underline-gap: 3rem;
-
+    
     --clr-navigation-bg: hsla(0, 0%, 100%, 0.04);
     
     --fw-nav-link: 400;
   }
-
+  
   .navbar {
     all: unset;
     background-color: var(--clr-navigation-bg);
     padding: var(--navigation-padding);
   }
-
+  
   @supports (backdrop-filter: blur(1.8rem)) {
     .navbar {
       backdrop-filter: blur(1.8rem);
@@ -132,7 +134,7 @@
     --header-padding-block: 3rem;
     --navbar-list-gap: 6rem;
     --navigation-padding:3rem 12rem 3rem 6rem;
-
+    
     --fw-nav-link: 500;
   }
 }
@@ -142,18 +144,19 @@
     --navigation-padding:3rem 12rem 3rem 6rem;
     --navbar-list-gap: 6rem;
   }
-
+  
   .tabs__counter {
     display:inline-block;
     font-size:calc(var(--fs-nav-link) + 0.2rem);
     font-weight:800;
   }
-
+  
+  
   .navbar::before {
     background-color:var(--clr-navigation-outline);
     width:var(--outline-width);
     height:0.8px;
-    left:calc((var(--outline-width) - 15px) * -1);
+    left:calc((var(--outline-width) - var(--left-inset)) * -1);
     top:50%;
     transform:translateY(-50%);
   }  

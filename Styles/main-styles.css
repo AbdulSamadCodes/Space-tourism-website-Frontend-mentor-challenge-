@@ -6,7 +6,7 @@
 
   /* typography */
   --fs-secondary-title:2rem;
-  --fs-section-text:1.7rem;
+  --fs-section-text:1.8rem;
 
   --fw-seconadary-title:500;
 
@@ -69,15 +69,51 @@
 }
 
 /*  media queries */
-/* responsive for medium size devices */
 
+/* responsive for medium size devices */
 @media (width > 575px) {
   :root{
     --wrapper-max-width:500px;
     --content-wrapper-padding-block:18rem;
 
     --section-text-max-width:60ch;
+  }
+}
 
-    --fs-primary-title:12rem;
+/*  responsive for desktop devices */ 
+@media(width > 768px) {
+  :root{
+    --wrapper-max-width:720px; 
+    --content-wrapper-padding-block:22rem;
+
+    --fs-secondary-title:2.2rem;
+    --fs-section-text:1.9rem;
+  }
+}
+
+@media(width > 992px) {
+  :root{
+    --wrapper-max-width:950px; 
+    --content-wrapper-padding-block:32rem;
+
+    --fs-secondary-title:2.2rem;
+    --fs-section-text:2rem;
+    --section-text-max-width:55ch;
+  }
+
+  .content__wrapper {
+    --text-align:left;
+
+    grid-template-columns:1fr 1fr;
+  }
+
+  .section__text{
+    --section-text-margin-inline:0;
+  }
+}
+
+@media(width > 1200px) {
+  :root{
+    --wrapper-max-width:1150px; 
   }
 }
