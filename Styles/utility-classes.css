@@ -64,6 +64,7 @@
 
 .has-underline {
   position:relative;
+  max-width:max-content;
 }
 
 .has-underline::before {

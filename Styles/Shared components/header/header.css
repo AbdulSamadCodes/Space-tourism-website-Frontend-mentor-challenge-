@@ -64,7 +64,6 @@
   font-size: var(--fs-nav-link);
   font-weight: var(--fw-nav-link);
   letter-spacing: 1.6px;
-  max-width: max-content;
 }
 
 .nav__link.has-underline::before {

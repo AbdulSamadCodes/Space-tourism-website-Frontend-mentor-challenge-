@@ -1,7 +1,4 @@
 :root {
-  /* widths */
-  --wrapper-max-width:350px;
-
   /* spacings */
   --wrapper-padding-inline:0;
 
@@ -9,6 +6,7 @@
   --clr-white:hsl(0,0%,100%);
   --clr-light:hsl(231,77%,90%);
   --clr-dark:hsl(230,35%,7%);
+  --clr-dark-75:rgb(71, 67, 67);
     
   /* typograpy */
   --ff-fira-sans-condensed:"Fira Sans Condensed", sans-serif;
