@@ -70,6 +70,10 @@
   bottom: calc(var(--nav-link-underline-gap) * -1);
 }
 
+.nav__link.has-underline:hover::before {
+  width:100%;
+}
+
 .tabs__counter {
   margin-inline-end: 0.5rem;
 }

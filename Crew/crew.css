@@ -1,23 +1,101 @@
 /* custom properties */
-:root{
+:root {
+  /* spacings */
+  --crew-member-intro-margin-top: 3rem;
+  --crew-member-name-margin-top: 0.8rem;
 
-  /* typography */   
-  --fs-crew-member-designation:2.5rem;  
+  /* widths */
+  --crew-tab-width: 15px;
+
+  /* typography */
+  --fs-crew-member-designation: 2rem;
+  --fs-crew-member-name: 3rem;
 }
 
 .crew__member-info {
-  --text-align:center;
+  --text-align: center;
 
-  text-align:var(--text-align);
+  text-align: var(--text-align);
 }
 
 .info__wrapper {
   font-family: var(--ff-Bellafair);
+  letter-spacing: -0.5px;
 }
 
 .crew__member-designation {
-  font-size:var(--fs-crew-member-designation);
-  font-weight:600;
-  color:var(--clr-dark-silver);
-  letter-spacing:0.2px;
+  font-size: var(--fs-crew-member-designation);
+  font-weight: 600;
+  color: var(--clr-dark-silver);
+}
+
+.crew__member-name {
+  font-size: var(--fs-crew-member-name);
+  color: var(--clr-white);
+  margin-block-start: var(--crew-member-name-margin-top);
+}
+
+.crew__member-intro {
+  margin-block-start: var(--crew-member-intro-margin-top);
+}
+
+.crew__tab {
+  width: var(--crew-tab-width);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--clr-dark-gray);
+
+  transition: background-color 300ms ease;
+}
+
+.crew__tab:is(:focus, :focus-visible) {
+  background-color: var(--clr-white);
+}
+
+/* media queries */
+
+@media (width > 575px) {
+  :root {
+    --fs-crew-member-name: 3.2rem;
+  }
+
+  .crew__figure__wrapper,
+  .crew .inner__main__content .tabs__container {
+    grid-row: 2 / 3;
+  }
+
+  .crew__member-name {
+    white-space: nowrap;
+  }
+}
+
+@media (width > 992px) {
+  :root {
+    --crew-member-name-margin-top: 1rem;
+
+    --fs-crew-member-name: 4.8rem;
+  }
+
+  .crew__member-info {
+    --text-align: left;
+  }
+
+  .crew .inner__content__wrapper {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    gap: 0rem;
+  }
+
+  .crew__figure__wrapper {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .crew__figure__wrapper figure {
+    margin-block-start: -8rem;
+  }
+
+  .crew .inner__main__content {
+    align-items: start;
+  }
 }

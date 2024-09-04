@@ -76,7 +76,9 @@
   transition:width 300ms ease;
 }
 
-.has-underline:is(:hover,:focus)::before {
+
+
+.has-underline:is(:focus,:focus-visible)::before {
   width:100%;
 }
 
