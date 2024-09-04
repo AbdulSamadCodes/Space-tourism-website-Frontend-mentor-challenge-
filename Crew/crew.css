@@ -1,0 +1,23 @@
+/* custom properties */
+:root{
+
+  /* typography */   
+  --fs-crew-member-designation:2.5rem;  
+}
+
+.crew__member-info {
+  --text-align:center;
+
+  text-align:var(--text-align);
+}
+
+.info__wrapper {
+  font-family: var(--ff-Bellafair);
+}
+
+.crew__member-designation {
+  font-size:var(--fs-crew-member-designation);
+  font-weight:600;
+  color:var(--clr-dark-silver);
+  letter-spacing:0.2px;
+}

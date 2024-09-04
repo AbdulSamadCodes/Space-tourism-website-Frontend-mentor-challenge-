@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="/Styles/main-styles.css" />
     <link rel="stylesheet" href="/Styles/utility-classes.css" />
     <link rel="stylesheet" href="/Styles/Shared components/header/header.css" />
-    <link rel="stylesheet" href="/Home/home.css"/>
-    <link rel="stylesheet" href="/Destination/destinations.css">
+    <link rel="stylesheet" href="/Home/home.css" />
     <link rel="stylesheet" href="/Crew/crew.css">
 
     <title>Frontend Mentor | Space tourism website</title>
@@ -28,9 +27,9 @@
   <body>
     <div
       class="main-container home-container"
-      data-mobile-bg="/assets/home/background-home-mobile.jpg"
-      data-tablet-bg="/assets/home/background-home-tablet.jpg"
-      data-desktop-bg="/assets/home/background-home-desktop.jpg"
+      data-mobile-bg="/assets/crew/background-crew-mobile.jpg"
+      data-tablet-bg="/assets/crew/background-crew-tablet.jpg"
+      data-desktop-bg="/assets/crew/background-crew-desktop.jpg"
       data-bg-container
     >
       <!-- header -->
@@ -52,7 +51,7 @@
             <ul class="nav__list flex">
               <li class="nav__item">
                 <a
-                  href="index.html"
+                  href="/index.html"
                   class="nav__link uppercase has-underline cursor-pointer"
                   ><span class="tabs__counter display-inline-block">00</span
                   >Home
@@ -61,7 +60,7 @@
 
               <li class="nav__item">
                 <a
-                  href="Destination/destinations.html"
+                  href="/Destination/destinations.html"
                   class="nav__link uppercase has-underline cursor-pointer"
                   ><span class="tabs__counter display-inline-block">01</span
                   >Destinaton
@@ -94,31 +93,67 @@
         </div>
       </header>
 
-      <!-- main-->
       <main>
-        <section class="home" data-main-section>
-          <div class="wrapper margin-inline-auto" data-wrapper>
-            <div class="content__wrapper home__content__wrapper grid">
+        <section class="crew" data-main-section>
+          <div
+            class="wrapper innerpage-wrapper margin-inline-auto"
+            data-wrapper
+          >
+            <h2 class="title__secondary crew__title__secondary uppercase">
+              <span class="inner__page__counter display-inline">02</span>
+              Meet your crew
 
-              <div class="content-section home-content grid">
-                  <h2 class="title__secondary home__title__secondary uppercase">So, you want to travel to</h2>
-                  <h1 class="title__primary home__title__primary uppercase">Space</h1>
-                  <p class="section__text">
-                    Let’s face it; if you want to go to space, you might as well genuinely go to
-                    outer space and not hover kind of on the edge of it. Well sit back, and relax
-                    because we’ll give you a truly out of this world experience!
-                  </p>
+            </h2>
+
+            <div
+              class="inner__content__wrapper destination__content__wrapper grid margin-inline-auto"
+            >
+              <div class="figure-wrapper crew__figure__wrapper">
+                <figure class="figure inner__page__figure">
+                  <img
+                    src="/assets/crew/image-anousheh-ansari.png"
+                    data-inner-page-img data-crew-img
+                  />
+                </figure>
               </div>
 
-                <button class="btn-explore grid place-content-center uppercase">Explore</button>
-              </div>  
-         
+              <div class="inner__main__content grid">
+                <div
+                  class="tabs__container crew__tabs__container flex"
+                  data-tabs-container
+                >
+                  <button class="tab crew__tab relative" data-tab></button>
+                  <button class="tab crew__tab relative" data-tab></button>
+                  <button class="tab crew__tab relative" data-tab></button>
+                  <button class="tab crew__tab relative" data-tab></button>
+                </div>
+
+                <div class="crew__member-info grid">
+
+                  <div class="info__wrapper">
+                    <p class="crew__member-designation uppercase">Flight Engineer
+                    </p>
+                    
+                    <p class="crew__member-name" data-crew-member-name>
+                      Anousheh Ansari
+                    </p>
+                  </div>
+
+                  <p class="section__text crew__member__intro" data-crew>
+                    Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+                    Ansari was the fourth self-funded space tourist, the first self-funded woman to
+                    fly to the ISS, and the first Iranian in space.
+                  </p>
+                  
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
       </main>
-      
     </div>
-      
+
     <!-- custom scripts link -->
     <script src="/src/header.js"></script>
     <script src="/src/update_backgrounds.js"></script>

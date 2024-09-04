@@ -54,7 +54,7 @@
 }
 
 .distance__data {
-font-family: var(--ff-Bellafair);
+  font-family: var(--ff-Bellafair);
   font-size:var(--fs-distance-data);
   color:var(--clr-white);
   margin-block-start:0.5rem;

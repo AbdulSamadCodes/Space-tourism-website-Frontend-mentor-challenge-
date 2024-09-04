@@ -4,7 +4,7 @@
   --content-wrapper-padding-block: 12rem;
   --section-text-margin-inline: auto;
   --innerpage-wrapper-padding-block: 12rem;
-  --inner-content-wrapper-margin-top: 3rem;
+  --inner-content-wrapper-margin-top: 5rem;
   --inner-content-wrapper-gap: 3rem;
   --tabs-container-gap: 3rem;
   --inner-main-content-gap: 4rem;
@@ -14,7 +14,7 @@
   --inner-page-figure-margin-inline: auto;
 
   /* typography */
-  --fs-secondary-title: 2rem;
+  --fs-secondary-title: 2.2rem;
   --fs-section-text: 1.8rem;
 
   --fw-seconadary-title: 500;
@@ -88,7 +88,7 @@
 }
 
 .inner__page__counter {
-  color:var(--clr-dark-75);
+  color:var(--clr-very-dark-blue);
   font-weight:600;
 }
 
@@ -138,7 +138,7 @@
     --inner-page-figure-maxwidth: max-content;
     --content-wrapper-padding-block: 22rem;
 
-    --fs-secondary-title: 2.2rem;
+    --fs-secondary-title: 2.4rem;
     --fs-section-text: 1.9rem;
   }
 }
@@ -150,7 +150,7 @@
     --inner-page-figure-margin-inline: 0;
     --inner-content-wrapper-gap: 12rem;
 
-    --fs-secondary-title: 2.2rem;
+    --fs-secondary-title: 2.6rem;
     --section-text-max-width: 55ch;
   }
 

@@ -6,7 +6,8 @@
   --clr-white:hsl(0,0%,100%);
   --clr-light:hsl(231,77%,90%);
   --clr-dark:hsl(230,35%,7%);
-  --clr-dark-75:rgb(71, 67, 67);
+  --clr-very-dark-grayish-blue:hsl(225, 13%, 25%);
+  --clr-dark-silver:hsl(216, 5%, 43%);
     
   /* typograpy */
   --ff-fira-sans-condensed:"Fira Sans Condensed", sans-serif;
