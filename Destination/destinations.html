@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/Home/home.css" />
     <link rel="stylesheet" href="/Destination/destinations.css" />
 
-    <title>Frontend Mentor | Space tourism website</title>
+    <title>Destinations</title>
   </head>
   <body>
     <div
@@ -100,8 +100,11 @@
             class="wrapper innerpage-wrapper margin-inline-auto"
             data-wrapper
           >
-            <h2 class="title__secondary destination__title__secondary  uppercase">
-              <span class='inner__page__counter display-inline'>01</span> Pick your destination
+            <h2
+              class="title__secondary destination__title__secondary uppercase"
+            >
+              <span class="inner__page__counter display-inline">01</span> Pick
+              your destination
             </h2>
 
             <div
@@ -111,7 +114,8 @@
                 <figure class="figure inner__page__figure">
                   <img
                     src="/assets/destination/image-mars.png"
-                    data-inner-page-img data-destination-img
+                    data-inner-page-img
+                    data-destination-img
                   />
                 </figure>
               </div>
@@ -123,38 +127,41 @@
                 >
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Moon
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Mars
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Europa
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Titan
                   </button>
                 </div>
 
-                <div class="inner__content__text">
-                  <h1
+                <div class="inner__content__text" >
+                  <h1 data-destination-name
                     class="title__primary destination__primary__title uppercase"
                   >
                     MOON
-                  </h1 data-destination-title>
+                  </h1>
 
-                  <p class="section__text destination__text" data-destination-description>
+                  <p
+                    class="section__text destination__text"
+                    data-destination-description
+                  >
                     See our planet as you’ve never seen it before. A perfect
                     relaxing trip away to help regain perspective and come back
                     refreshed. While you’re there, take in some history by
@@ -166,32 +173,40 @@
                   class="destinations__distance__wrapper flex align-items-center justify-content-center"
                 >
                   <div class="distance__info">
-                    <p class="distance__info__title 
-                    avg-distance-title uppercase">Avg, distance</p>
-                    <p class="avg-distance distance__data  uppercase" data-avg-distance>384,400 km
+                    <p
+                      class="distance__info__title avg-distance-title uppercase"
+                    >
+                      Avg, distance
+                    </p>
+                    <p
+                      class="avg-distance distance__data uppercase"
+                      data-avg-distance
+                    >
+                      384,400 km
                     </p>
                   </div>
 
                   <div class="distance__info">
-                    <p class="distance__info__title est-time-title uppercase">Est. travel time
+                    <p class="distance__info__title est-time-title uppercase">
+                      Est. travel time
                     </p>
-                    <p class="est-time distance__data uppercase" data-est-time>3 days</p>
+                    <p class="est-time distance__data uppercase" data-est-time>
+                      3 days
+                    </p>
                   </div>
-
                 </div>
-
               </div>
             </div>
-
           </div>
         </section>
       </main>
 
     </div>
-
     <!-- custom scripts link -->
     <script src="/src/header.js"></script>
     <script src="/src/update_backgrounds.js"></script>
     <script src="/src/udpate__wrapper__padding.js"></script>
+    <script type="module" src="/src/update__pages__content.js"></script>
+    <script type="module" src="/Destination/destinations.js"></script>
   </body>
 </html>

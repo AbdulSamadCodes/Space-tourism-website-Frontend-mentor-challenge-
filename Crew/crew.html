@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/Home/home.css" />
     <link rel="stylesheet" href="/Crew/crew.css">
 
-    <title>Frontend Mentor | Space tourism website</title>
+    <title></title>
   </head>
   <body>
     <div
@@ -122,16 +122,16 @@
                   class="tabs__container crew__tabs__container flex"
                   data-tabs-container
                 >
-                  <button class="tab crew__tab relative" data-tab></button>
-                  <button class="tab crew__tab relative" data-tab></button>
-                  <button class="tab crew__tab relative" data-tab></button>
-                  <button class="tab crew__tab relative" data-tab></button>
+                  <button class="tab crew__tab relative" data-crew-tab></button>
+                  <button class="tab crew__tab relative" data-crew-tab></button>
+                  <button class="tab crew__tab relative" data-crew-tab></button>
+                  <button class="tab crew__tab relative" data-crew-tab></button>
                 </div>
 
                 <div class="crew__member-info grid">
 
                   <div class="info__wrapper">
-                    <p class="crew__member-designation uppercase">Flight Engineer
+                    <p class="crew__member-designation uppercase" data-crew-member-role>Flight Engineer
                     </p>
                     
                     <p class="crew__member-name uppercase" data-crew-member-name>
@@ -139,7 +139,7 @@
                     </p>
                   </div>
 
-                  <p class="section__text crew__member-intro" data-crew>
+                  <p class="section__text crew__member-intro" data-crew-bio>
                     Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
                     Ansari was the fourth self-funded space tourist, the first self-funded woman to
                     fly to the ISS, and the first Iranian in space.
@@ -158,5 +158,7 @@
     <script src="/src/header.js"></script>
     <script src="/src/update_backgrounds.js"></script>
     <script src="/src/udpate__wrapper__padding.js"></script>
+    <script type="module" src="/src/update__pages__content.js"></script>    
+    <script type="module" src="/Crew/crew.js"></script>        
   </body>
 </html>
