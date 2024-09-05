@@ -62,6 +62,7 @@
 
 /* media queries */
 
+/* responsive for desktop devices */
 @media(width > 768px) {
   :root{
     --fs-destination-tabs:1.8rem; 

@@ -54,6 +54,7 @@
 
 /* media queries */
 
+/* responsive for medium devices */
 @media (width > 575px) {
   :root {
     --fs-crew-member-name: 3.2rem;
@@ -69,6 +70,7 @@
   }
 }
 
+/* responsive for desktop devices */
 @media (width > 992px) {
   :root {
     --crew-member-name-margin-top: 1rem;

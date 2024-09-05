@@ -38,7 +38,7 @@
   background-position: center;
 }
 
-.wrapper:not(.header > .wrapper) {
+.wrapper:not(:is(.header > .wrapper,.technology > .wrapper)) {
   padding-inline: var(--wrapper-padding-inline);
 }
 
