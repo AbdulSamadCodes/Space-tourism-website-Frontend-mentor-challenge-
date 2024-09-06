@@ -106,11 +106,20 @@
 
             <div class="figure-wrapper technology__figure__wrapper">
               <figure class="figure inner__page__figure">
-                <img
-                  src="/assets/technology/image-launch-vehicle-landscape.jpg"
-                  data-inner-page-img
-                  data-technology-img
-                />
+                <picture>
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="
+                      /assets/technology/image-launch-vehicle-portrait.jpg
+                    "
+                    data-technology-portrait-img
+                  />
+
+                  <img
+                    src="/assets/technology/image-launch-vehicle-landscape.jpg"
+                    data-technology-landscape-img
+                  />
+                </picture>
               </figure>
             </div>
 
@@ -140,13 +149,18 @@
               </div>
 
               <div class="technology__info__wrapper">
-                <p class="technology__info__subtitle uppercase">The terminology...</p>
+                <p class="technology__info__subtitle uppercase">
+                  The terminology...
+                </p>
 
                 <p class="technology__name uppercase" data-technology-name>
                   Launch vehicle
                 </p>
 
-                <p class="section__text technology__description" data-technology-description>
+                <p
+                  class="section__text technology__description"
+                  data-technology-description
+                >
                   A launch vehicle or carrier rocket is a rocket-propelled
                   vehicle used to carry a payload from Earth's surface to space,
                   usually to Earth orbit or beyond. Our WEB-X carrier rocket is
@@ -158,8 +172,6 @@
           </div>
         </section>
       </main>
-
-      
     </div>
 
     <!-- custom scripts link -->
