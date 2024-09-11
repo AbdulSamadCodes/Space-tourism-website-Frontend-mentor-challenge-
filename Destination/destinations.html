@@ -13,9 +13,9 @@
     />
 
     <!-- stylesheets links-->
+    <link rel="stylesheet" href="/Font/fonts.css" />
     <link rel="stylesheet" href="/Styles/reset.css" />
     <link rel="stylesheet" href="/Styles//global-custom-properties.css" />
-    <link rel="stylesheet" href="/Font/fonts.css" />
     <link rel="stylesheet" href="/Styles/main-styles.css" />
     <link rel="stylesheet" href="/Styles/utility-classes.css" />
     <link rel="stylesheet" href="/Styles/Shared components/header/header.css" />
@@ -94,7 +94,7 @@
         </div>
       </header>
 
-      <main>
+      <main> 
         <section class="destination">
           <div
             class="wrapper innerpage-wrapper margin-inline-auto"
@@ -113,7 +113,7 @@
               <div class="figure-wrapper destination__figure__wrapper">
                 <figure class="figure inner__page__figure">
                   <img
-                    src="/assets/destination/image-mars.png"
+                    src="/assets/destination/image-moon.png"
                     data-inner-page-img
                     data-destination-img
                   />
@@ -127,25 +127,25 @@
                 >
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Moon
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Mars
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
-                  >
+                    data-destination-tab
+                  >   
                     Europa
                   </button>
                   <button
                     class="tab destination__tab relative has-underline uppercase"
-                    data-tab
+                    data-destination-tab
                   >
                     Titan
                   </button>
@@ -204,9 +204,9 @@
     </div>
     <!-- custom scripts link -->
     <script src="/src/header.js"></script>
-    <script src="/src/update_backgrounds.js"></script>
+    <script src="/src/update_backgrounds.js" defer></script>
     <script src="/src/udpate__wrapper__padding.js"></script>
-    <script type="module" src="/src/update__pages__content.js"></script>
-    <script type="module" src="/Destination/destinations.js"></script>
+    <script type="module" src="/src/update__pages__content.js" defer></script>
+    <script type="module" src="/Destination/destinations.js" defer></script>
   </body>
 </html>

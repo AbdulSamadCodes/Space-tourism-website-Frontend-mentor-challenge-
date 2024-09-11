@@ -1,5 +1,6 @@
 import {updateDestinationContent} from '/Destination/destinations.js';
 import {updateCrewContent} from '/Crew/crew.js';
+import {updateTechnologyContent} from "/Technology/technology.js"
 
 //async function to fetch data from JSON file
 async function fetchPagesData() {
@@ -14,6 +15,7 @@ async function updatePagesData() {
 
   updateDestinationContent(pagesContent);
   updateCrewContent(pagesContent);
+  updateTechnologyContent(pagesContent);
 }
 
 updatePagesData();

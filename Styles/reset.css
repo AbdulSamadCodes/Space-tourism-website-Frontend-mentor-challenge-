@@ -61,7 +61,7 @@ textarea {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30px;
+  scroll-padding-top: 3rem;
   scrollbar-width: thin;
   font-size: 62.5%;
 }

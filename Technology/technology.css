@@ -100,7 +100,7 @@
 @media (width > 992px) {
   :root {
     --wrapper-gap: 0rem;
-    --inner-main-content-gap:3rem;
+    --inner-main-content-gap:5rem;
 
     --technology-tab-width: 60px;
 
@@ -138,6 +138,7 @@
     margin-inline-end:var(--margin-inline-end);
     grid-column:2/3;
 
+    grid-template-columns:min-content 1fr;
     grid-auto-flow:column;
     align-items:stretch;
     align-content:center;
